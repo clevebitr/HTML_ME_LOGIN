@@ -1,0 +1,26 @@
+<!-- 2024年2月3日 v0.1 -->
+<!-- xlbt -->
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="lat">
+    <div class="box">
+            <div class="tit">login</div>
+            <input class="usr" type="text" id="user" onchange="L_email()" placeholder="邮箱">
+            <span id="E_tips" class="tips"></span>
+            <input class="pwd" type="password" id="pasw" onchange="L_pwd()" placeholder="密码">
+            <span id="P_tips" class="tips"></span>
+            <button type="submit" onclick="login()">登录</button><br>
+            <a href="help.html">忘记密码?</a>
+            <span>没有账号?<a href="register.html">注册</a></span>
+    </div>
+</body>
+</html>

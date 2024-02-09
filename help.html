@@ -1,0 +1,29 @@
+<!-- 2024年2月3日 v0.1 -->
+<!-- xlbt -->
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP</title>
+    <link rel="stylesheet" type="text/css" href="css/help.css">
+    <script src="js/help.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="lat">
+    <div class="box">
+            <div class="tit">HELP</div>
+            <input class="usr" type="text" id="user" onchange="H_email()" placeholder="邮箱">
+            <span id="E_tips" class="tips"></span>
+            <input class="pwd" type="password" id="state" onchange="H_state()" placeholder="状态码">
+            <span id="S_tips" class="tips"></span>
+            <input class="pwd" type="password" id="pasw" onchange="H_pwd()" placeholder="新密码">
+            <span id="P_tips" class="tips"></span>
+            <input class="pwd" type="password" id="pasw1" onchange="H1_pwd()" placeholder="确认密码">
+            <span id="P1_tips" class="tips"></span>
+            <button type="button" onclick="help()">重置密码</button><br>
+            <a onclick="LOGININ()">登录</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- 2024年2月3日 v0.1 -->
+<!-- xlbt -->
+<html lang="zh_cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script src="js/register.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body class="lat">
+    <div class="box">
+        <div class="tit">register</div>
+        <input type="text" id="R_user" onchange="R_email()" placeholder="邮箱">
+        <span id="E_tips" class="tips"></span>
+        <input type="password" id="R_pasw" onchange="R_pwd()" placeholder="密码">
+        <span id="P_tips" class="tips"></span>
+        <input type="password" id="R1_pasw" onchange="R1_pwd()" placeholder="确认密码">
+        <span id="P1_tips" class="tips"></span>
+        <button class="btns" type=“button” onclick="return register()">注册</button><br>
+        <span>已有账号?<a href="index.html">登录</a></span>
+    </div>
+</body>
+</html>
