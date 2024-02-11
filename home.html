@@ -10,6 +10,10 @@
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="settings" id="settings">
+        <h1 id="username"></h1>
+        <button class="settings_but" id="settings_mo">修改密码</button>
+    </div>
     <div class="user_str" id="user_str">
         <h4 class="user_table_text">当前已注册的用户</h4>
         <table id="user_table" class="user_table">
@@ -54,7 +58,7 @@
     <div class="sidebar" id="sidebar">
         <ul>
             <li><button class="ion" id="HOME_BUT" onclick="HOME_CLICK()">HOME</button></li>
-            <li><button class="ion" id="str">选项</button></li>
+            <li><button class="ion" id="str" onclick="settings()">选项</button></li>
             <li><button class="ion" id="user" onclick="user_str()">用户管理</button></li>
             <li><button class="ion" id="by" onclick="by()">关于</button></li>
             <li><button class="ion" id="exit_login" onclick="exit_login()">退出登录</button></li>
@@ -107,6 +111,9 @@
                 document.getElementById('more_icon_exit').style.display="flex";
                 document.getElementById('more_icon').style.display="none";
             }
+        })
+        $('.settings_but').on('click',function(){
+            window.location.href = "./help.html"
         })
     </script>
 </body>
